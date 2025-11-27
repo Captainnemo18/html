@@ -1,0 +1,84 @@
+header{
+ display: flex;
+  flex-direction: column;  
+  gap: 20px;                
+  padding: 20px;
+
+#T1{
+color: #000;
+font-family: Inter;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.32px;
+}
+
+#s1{
+  position: absolute;
+  display: flex;
+  gap: 20px;
+
+#hb1, #hb2 {
+  padding: 9px 20px;
+  border-radius: 34px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+#hb1{ 
+border-radius: 34px;
+color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+#hb2{ 
+border-radius: 34px;
+background: #2391FF;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+}
+
+#logo{
+display: flex;
+margin: 0 auto;
+width: 162px;
+height: 162px;
+aspect-ratio: 1/1;
+
+}
+
+#p1{
+  color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.64px;
+}
+
+#p2{
+  color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.24px;
+}
+
+}
