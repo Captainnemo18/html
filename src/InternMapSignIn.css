@@ -31,7 +31,8 @@ line-height: normal;
 body{
 
 #p1{    
-display: flex;
+padding-bottom: 15px;
+    display: flex;
 justify-content: center;
 align-items: center;
 gap: 15px;
@@ -48,7 +49,7 @@ line-height: normal;
 margin: auto;
 display: flex;
 width: 800px;
-height: 600px;
+height: auto;
 padding: 50px;
 flex-direction: column;
 align-items: center;
@@ -56,7 +57,8 @@ gap: 65px;
 border-radius: 80px;
 background: #FCFCFC;
 box-shadow: 0 0 120px -6px rgba(0, 0, 0, 0.25);
-    #p3{
+    
+#p3{
 color: rgba(255, 28, 32, 0.80);
 font-family: Inter;
 font-size: 27px;
@@ -65,10 +67,7 @@ font-weight: 700;
 line-height: normal;
 }
 #form{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 50px;
+
 
 #f1{
 color: rgba(0, 0, 0, 0.40);
@@ -78,9 +77,8 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 border-color: transparent;
-display: flex;
-width: 150px;
-padding:  25px 655px 25px 28px;
+width: 750px;
+padding:  25px 0px 25px 25px;
 align-items: center;
 border-radius: 35px;
 background: #FFF;
@@ -100,8 +98,8 @@ font-weight: 600;
 line-height: normal;
 border-color: transparent;
 display: flex;
-width: 150px;
-padding: 25px 655px 25px 28px;
+width: 750px;
+padding:  25px 0px 25px 25px;
 align-items: center;
 border-radius: 35px;
 background: #FFF;
@@ -131,6 +129,7 @@ line-height: normal;
 }
 }
 #p4{
+padding-bottom: 20px;
 color: rgba(0, 0, 0, 0.40);
 font-family: Inter;
 font-size: 21px;
@@ -156,10 +155,6 @@ footer{
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.60) 0%, #3397FC 100%);
 
 #p5{
-/* padding: auto;
-display: flex;
-width: 200px;
-height: 20px; */
 padding: auto;
 padding-top: 40px;
 display: flex;
