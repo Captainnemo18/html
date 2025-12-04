@@ -1,17 +1,13 @@
-
-
 header {
 
     #h1 {
         display: flex;
         flex-direction: row;
-        gap: 20px;
         padding: 20px;
         justify-content: space-between;
         align-items: center;
 
         #T1 {
-
             color: #000;
             font-size: 40px;
             font-style: normal;
@@ -21,37 +17,29 @@ header {
         }
 
         #s1 {
-
-            gap: 20px;
+            gap: 2px;
             display: flex;
 
             #hb1, #hb2 {
-                padding: 9px 20px;
+                padding: 10px 20px;
                 border-radius: 34px;
                 border: none;
-                font-size: 14px;
                 cursor: pointer;
+                text-align: center;
+                font-size: max(14px, 1vw);
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
             }
 
             #hb1 {
-                border-radius: 34px;
-                color: #000;
-                text-align: center;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
+                background: transparent;
+                color: #000000;
             }
 
             #hb2 {
-                border-radius: 34px;
                 background: #2391FF;
                 color: #FFF;
-                text-align: center;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
             }
         }
     }
@@ -59,9 +47,7 @@ header {
     #l1 {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-
+        padding-top: 10px;
 
         #logo {
             display: flex;
@@ -69,13 +55,12 @@ header {
             width: 162px;
             height: 162px;
             aspect-ratio: 1/1;
-
         }
 
         #p1 {
             color: #000;
             text-align: center;
-            font-size: 64px;
+            font-size: clamp(32px, 5vw , 64px);
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -85,9 +70,11 @@ header {
         #p2 {
             color: #000;
             text-align: center;
-            font-size: 24px;
+            font-size: clamp(12px, 5vw , 24px);
+            margin-left: 20px;
+            margin-right: 20px;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 500;
             line-height: normal;
             letter-spacing: -0.24px;
         }
@@ -97,16 +84,17 @@ header {
 body {
 
     #bb1 {
+        margin-bottom: 20px;
         display: flex;
         width: auto;
         padding-top: 60px;
         flex-direction: column;
         align-items: center;
-        gap: 36px;
+        gap: 26px;
 
         #bh {
             color: #000;
-            font-size: 56px;
+            font-size: clamp(32px, 5vw, 56px);
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -115,65 +103,63 @@ body {
         #bb2 {
             justify-content: center;
             align-items: center;
-            gap: 15px;
             display: flex;
-            width: 160px;
-            height: 45px;
-            padding: 9px 31px;
-            aspect-ratio: 32/9;
+            padding: 9px;
+            border-color: transparent;
+            border-radius: 60px;
+            background: rgba(239, 239, 239, 0.8);
 
-
-            #bu1 {
+            #bu1, #bu2 {
                 border-color: transparent;
-                border-radius: 34px;
-                background: rgba(255, 255, 255, 0.75);
+                background: transparent;
                 color: rgba(0, 0, 0, 0.80);
                 text-align: center;
-                font-size: 24px;
+                font-size: 22px;
                 font-style: normal;
-                font-weight: 700;
+                font-weight: 640;
                 line-height: normal;
+                padding: 6px 25px;
             }
 
-            #bu2 {
-                border-color: transparent;
+            #bu1 {
+                background: #ffffff;
                 border-radius: 34px;
-                box-shadow: 0 -1px 60px 0 rgba(0, 0, 0, 0.25);
                 color: rgba(0, 0, 0, 0.80);
-                text-align: center;
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
             }
         }
     }
 
-    #gt {
-        color: #000;
-        font-size: 40px;
+    #roadmap-card-title, #roadmap-card-title2, #roadmap-card-title3 {
+        color: #000000;
+        font-size: 32px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        padding: 20px 20px 20px 150px;
+        margin-top: 80px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    #roadmap-card-title {
+        margin-top: -70px;
     }
 
     .button-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+        gap: 20px;
         justify-items: center;
         align-items: center;
-        border-radius: 80px;
-        background: #F3F3F3;
-        padding: 50px;
-        margin: 20px 150px 60px 150px;
+        border-radius: 75px;
+        background: rgba(236, 236, 236, 0.8);
+        padding: 35px;
+        margin: 10px max(10px, 5vw);
     }
 
     .grid-button {
         width: 310px;
         height: 110px;
-        background: linear-gradient(180deg, rgba(52, 147, 255, 0.8) 0%, #1883fd 100%);
+        background: linear-gradient(180deg, rgb(79, 161, 255) 0%, #1883fd 100%);
         border: none;
         border-radius: 40px;
         color: #FFF;
@@ -181,7 +167,7 @@ body {
         font-weight: 700;
         align-content: center;
         cursor: pointer;
-        padding: 15px 30px;
+        padding-left: 20px;
     }
 
     .grid-button:hover {
@@ -190,8 +176,8 @@ body {
 
     footer {
         width: auto;
-        height: 250px;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.60) 0%, #3397FC 100%);
+        height: 300px;
+        background: linear-gradient(180deg, rgb(255, 255, 255) 15%, #3397FC 100%);
 
         #ft1 {
             text-align: start;
@@ -200,10 +186,16 @@ body {
             font-style: normal;
             font-weight: 800;
             line-height: normal;
-            background: linear-gradient(180deg, rgba(250, 250, 250, 0.87) 0%, rgba(233, 235, 238, 0.87) 100%);
+            background-clip: text;
+            background: #FFFFFF;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            display: flex;
+            width: 502px;
+            flex-direction: column;
+            justify-content: center;
+            aspect-ratio: 502.00/118.79;
         }
 
         #ft2 {
@@ -212,7 +204,8 @@ body {
             font-style: normal;
             font-weight: 800;
             line-height: normal;
-
+            padding-left: 70px;
+            margin: 10px;
         }
     }
 }
