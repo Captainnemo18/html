@@ -5,6 +5,8 @@ margin: 0 auto;
 width: 162px;
 height: 162px;
 aspect-ratio: 1/1;
+padding-top: 15px;
+margin-top: 15px;
 }
 
 #b1{
